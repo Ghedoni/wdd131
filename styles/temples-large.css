@@ -16,16 +16,6 @@ header {
     font-size: 16px;
 }
 
-/* Hamburger button styling */
-.hamburger-menu {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
 
 h2 {
     text-align: left; /* Left-align heading */
