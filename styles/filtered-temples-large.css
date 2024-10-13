@@ -1,0 +1,124 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #4b0082; /* Purple background for header */
+    color: white;
+    top: 0;
+    width: 100%;
+}
+.header-link {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+h2 {
+    text-align: left; /* Left-align heading */
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.main-content h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+/* Image Album Styles */
+.album-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Spacing between items */
+    justify-content: center;
+}
+
+.album-item {
+    text-align: center;
+}
+
+.album-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-item p {
+    margin: 10px 0 0;
+    color: #4b0082; /* Matching color for the text */
+    font-weight: bold;
+}
+
+.album-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4b0082;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .album-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+@media (max-width: 600px) {
+    .album-container {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav a {
+        padding: 10px;
+    }
+}
